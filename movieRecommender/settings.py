@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates'  #Specifies the directory to search for templates
+            BASE_DIR / 'templates'  # Specifies the directory to search for templates
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'movie-recommender',
-        'USER':'postgres',
+        'USER': 'postgres',
         'PASSWORD': 'pass@123',
         'HOST': 'localhost'
     }

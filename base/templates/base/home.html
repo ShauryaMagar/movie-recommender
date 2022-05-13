@@ -1,15 +1,166 @@
-{% extends 'main.html' %}
-{% load static %}
-{% block content %}
-<div class="container text-white">
-    <div class="row justify-content-around my-5">
-        <div class="col-sm-10 col-md-6 col-lg-5 p-5">
-            <p class="fs-2 fw-bold">Get <span style="color: #F73859;">Movie Recommendations</span> on your mood.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        <div style="align-items: center;display:flex" class="col-sm-10 col-md-6 col-lg-5 p-5">
-            <img class="img-fluid" src="{% static 'images/movie.svg' %}" alt="">
-        </div>
+{% extends 'main.html' %} {% load static %} {% block content %}
+<div id="" class="container-fluid text-white my-lg-5 my-sm-1">
+  <div class="row justify-content-around p-3">
+    <div class="col-sm-8 col-md-7 col-lg-4">
+      <p class="fs-2 fw-bold">
+        Get <span style="color: #f73859">Movie Recommendations</span> on your
+        mood.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum
+      </p>
     </div>
+    <div
+      style="align-items: center; display: flex"
+      class="col-sm-8 col-md-7 col-lg-4"
+    >
+      <img class="img-fluid" src="{% static 'images/movie.svg' %}" alt="" />
+    </div>
+  </div>
+</div>
+<div id="about-section" class="container-fluid bg-light text-center">
+  <div class="row justify-content-center">
+    <div class="col-10 text-center mt-4">
+      <p class="fs-3 fw-bold">About</p>
+    </div>
+  </div>
+  <div class="row justify-content-around">
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/ai.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Artificial Intelligence </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Suspendisse sed ex in purus tristique pellentesque id a ligula. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. In luctus purus
+        cursus felis posuere ornare. Nullam pretium ante orci, et auctor odio
+        tincidunt non. Donec nunc enim, pretium sit amet orci sed, rutrum
+        malesuada dolor. Ut eget mauris nibh. Ut sollicitudin luctus risus, eu
+        auctor magna hendrerit a.
+      </p>
+    </div>
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/movie-watch.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Build your ideal Movie Playlist </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu quam
+        nibh. Proin in odio sem. Proin id turpis eu risus viverra sollicitudin.
+        Fusce bibendum consequat volutpat. Proin viverra congue est. Nulla et
+        quam nec ligula egestas accumsan. Proin pretium vitae purus quis auctor.
+        Pellentesque urna leo, sagittis eget nulla at, lobortis ullamcorper
+        ipsum.
+      </p>
+    </div>
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/sentiment.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Mood Detection </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Suspendisse sed ex in purus tristique pellentesque id a ligula. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. In luctus purus
+        cursus felis posuere ornare. Nullam pretium ante orci, et auctor odio
+        tincidunt non. Donec nunc enim, pretium sit amet orci sed, rutrum
+        malesuada dolor. Ut eget mauris nibh. Ut sollicitudin luctus risus, eu
+        auctor magna hendrerit a.
+      </p>
+    </div>
+  </div>
+</div>
+<div id="how-section" class="container-fluid text-center text-light">
+  <div class="row justify-content-center">
+    <div class="col-10 text-center mt-4">
+      <p class="fs-3 fw-bold">How it works?</p>
+    </div>
+  </div>
+  <div class="row justify-content-around">
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/selfie.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Smile Please! </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Suspendisse sed ex in purus tristique pellentesque id a ligula. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. In luctus purus
+        cursus felis posuere ornare. Nullam pretium ante orci, et auctor odio
+        tincidunt non. Donec nunc enim, pretium sit amet orci sed, rutrum
+        malesuada dolor. Ut eget mauris nibh. Ut sollicitudin luctus risus, eu
+        auctor magna hendrerit a.
+      </p>
+    </div>
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/data.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Sophisticated ML algorithms </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu quam
+        nibh. Proin in odio sem. Proin id turpis eu risus viverra sollicitudin.
+        Fusce bibendum consequat volutpat. Proin viverra congue est. Nulla et
+        quam nec ligula egestas accumsan. Proin pretium vitae purus quis auctor.
+        Pellentesque urna leo, sagittis eget nulla at, lobortis ullamcorper
+        ipsum.
+      </p>
+    </div>
+    <div class="col-sm-8 col-md-5 col-lg-3 p-2 my-4">
+      <img
+        class="img-fluid rounded"
+        style="height: 15rem"
+        src="{% static 'images/output.svg' %}"
+        alt=""
+      />
+      <p class="fs-4 fw-bold mt-2">
+        <span style="color: #f73859"> Show Results </span>
+      </p>
+      <p class="fs-6 fw-light lh-2">
+        Suspendisse sed ex in purus tristique pellentesque id a ligula. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. In luctus purus
+        cursus felis posuere ornare. Nullam pretium ante orci, et auctor odio
+        tincidunt non. Donec nunc enim, pretium sit amet orci sed, rutrum
+        malesuada dolor. Ut eget mauris nibh. Ut sollicitudin luctus risus, eu
+        auctor magna hendrerit a.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-light text-center">
+  <div class="row justify-content-center">
+    <div class="col-10 text-center mt-4">
+      <p class="fs-4 fw-bold">Made with ❤️ by NAS/ANS/SAN?</p>
+    </div>
+  </div>
 </div>
 {% endblock content %}
